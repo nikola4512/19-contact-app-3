@@ -1,0 +1,9 @@
+Menggunakan NPM
+1. express
+2. express-ejs-layout
+3. 
+
+Extention
+1. EJS language support (untuk mendukung tampilan dan emmet EJS)
+
+.prettierignore (berisi : *.ejs) => untuk menghentikan prettier pada semua file .ejs

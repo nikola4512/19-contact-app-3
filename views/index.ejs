@@ -1,0 +1,29 @@
+<%- // include('layouts/header') %>
+<%- // include('layouts/nav') %>
+
+    <h1>Halaman Utama</h1>
+
+    <!-- dapat menggunakan kode javascript -->
+    <!-- <p>Nama saya <%= // nama %></p> -->
+
+    <h4>Daftar Mahasiswa</h4>
+
+    <% if (mahasiswa.length < 1) { %>
+    <p>Daftar mahasiswa masih kosong!</p>
+    <% } %> 
+
+    <% mahasiswa.forEach(orang => { %>
+      <ul>
+        <li>Nama : <%=orang.nama%></li>
+        <li>Email : <%=orang.email%></li>
+      </ul>
+    <% });%>
+
+    <!-- 
+      <ul>
+        <li>Nama : Nikola Arinanda</li>
+        <li>Email : nikolaarinanda@gmail.com</li> 
+      </ul>
+    -->
+
+<%- // include('layouts/footer') %>
